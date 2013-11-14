@@ -9,13 +9,15 @@ Thanks to [@bnickel](https://github.com/bnickel) for this pretty solution.
 Installation
 ============
 
-```pod `Kiwi-KIF`, '~>1.0.0'```
+```ruby
+pod `Kiwi-KIF`, '~>1.0.0'
+```
 
 Usage
 =======
 
 
-```
+```objective-c
 #import "Kiwi+KIF.h"
 
 KIF_SPEC_BEGIN(AwesomeAppSpec)
