@@ -24,7 +24,7 @@ Usage
 
 
 ```objective-c
-#import "Kiwi+KIF.h"
+#import <Kiwi+KIF.h>
 
 KIF_SPEC_BEGIN(AwesomeAppSpec)
 
