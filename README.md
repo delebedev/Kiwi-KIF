@@ -10,7 +10,13 @@ Installation
 ============
 
 ```ruby
-pod `Kiwi-KIF`, '~>1.0.0'
+pod `Kiwi-KIF`, '~>1.0.1'
+```
+
+SenTestingKit used as default Kiwi-KIF testing framework. Definition for XCTest installation will looks as following:
+
+```ruby
+pod `Kiwi-KIF/XCTest`, '~>1.0.1'
 ```
 
 Usage
@@ -18,7 +24,7 @@ Usage
 
 
 ```objective-c
-#import "Kiwi+KIF.h"
+#import <Kiwi+KIF.h>
 
 KIF_SPEC_BEGIN(AwesomeAppSpec)
 
