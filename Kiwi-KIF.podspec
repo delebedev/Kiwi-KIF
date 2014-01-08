@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.author       = { "Denis Lebedev" => "d2.lebedev@gmail.com" }
   s.platform     = :ios, '5.0'
   s.source       = { :git => "https://github.com/garnett/Kiwi-KIF.git", :tag => "1.0.0" }
-  s.source_files  = 'src'
   s.requires_arc = true
 
   s.dependency 'KIF' , '~>2.0.0'
@@ -16,10 +15,12 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Kiwi-KIF/SenTestingKit'
 
   s.subspec 'SenTestingKit' do |sentest|
+    sentest.source_files = 'src'
     sentest.dependency 'Kiwi/SenTestingKit', '~>2.2.3'
   end
 
   s.subspec 'XCTest' do |xctest|
+    xctest.source_files = 'src'
     xctest.dependency 'Kiwi/XCTest', '~>2.2.3'
   end
 end
