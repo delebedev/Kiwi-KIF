@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'Kiwi-KIF/SenTestingKit'
 
-  subspec 'SenTestingKit' do |sentest|
+  s.subspec 'SenTestingKit' do |sentest|
     sentest.dependency 'Kiwi/SenTestingKit', '~>2.2.3'
   end
 
-  subspec 'XCTest' do |xctest|
+  s.subspec 'XCTest' do |xctest|
     xctest.dependency 'Kiwi/XCTest', '~>2.2.3'
   end
 end
