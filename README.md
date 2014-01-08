@@ -13,7 +13,7 @@ Installation
 pod `Kiwi-KIF`, '~>1.0.1'
 ```
 
-SenTestingKit used as default Kiwi-KIF testing framework. Definition for XCTest installation will looks like following:
+SenTestingKit used as default Kiwi-KIF testing framework. Definition for XCTest installation will looks as following:
 
 ```ruby
 pod `Kiwi-KIF/XCTest`, '~>1.0.1'
