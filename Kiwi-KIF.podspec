@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Kiwi-KIF"
-  s.version      = "1.0.1"
+  s.version      = "1.1.0"
   s.summary      = "Allows to write KIF integration tests using Kiwi framework"
   s.homepage     = "https://github.com/garnett/Kiwi-KIF"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/garnett/Kiwi-KIF.git", :tag => "#{s.version}" }
   s.requires_arc = true
 
-  s.dependency 'KIF' , '~>2.0.0'
+  s.dependency 'KIF'
 
   s.default_subspec = 'SenTestingKit'
 
