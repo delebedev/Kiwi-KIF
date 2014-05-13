@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/garnett/Kiwi-KIF"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Denis Lebedev" => "d2.lebedev@gmail.com" }
-  s.platform     = :ios, '5.0'
+  s.platform     = :ios, '5.1'
   s.source       = { :git => "https://github.com/garnett/Kiwi-KIF.git", :tag => "#{s.version}" }
   s.requires_arc = true
 
