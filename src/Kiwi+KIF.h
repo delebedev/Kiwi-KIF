@@ -32,3 +32,12 @@ Class<KIFTestActorDelegate> actorSelf = self; \
 Class<KIFTestActorDelegate> self = actorSelf; \
 
 #define KIF_SPEC_END } SPEC_END
+
+#undef KW_ADD_EXIST_VERIFIER
+#define KW_ADD_EXIST_VERIFIER(expectationType) [KWSpec addExistVerifierWithExpectationType:expectationType callSite:KW_THIS_CALLSITE]
+
+#undef KW_ADD_MATCH_VERIFIER
+#define KW_ADD_MATCH_VERIFIER(expectationType) [KWSpec addMatchVerifierWithExpectationType:expectationType callSite:KW_THIS_CALLSITE]
+
+#undef KW_ADD_ASYNC_VERIFIER
+#define KW_ADD_ASYNC_VERIFIER(expectationType, timeOut, wait) [KWSpec addAsyncVerifierWithExpectationType:expectationType callSite:KW_THIS_CALLSITE timeout:timeOut shouldWait:wait]
