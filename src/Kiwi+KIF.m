@@ -28,8 +28,8 @@
 @implementation KWSpec (KIFAdditions)
 
 + (void)failWithException:(NSException *)exception stopTest:(BOOL)stop {
-    [[[KWExampleSuiteBuilder sharedExampleSuiteBuilder] currentExample] reportFailure:[KWFailure failureWithCallSite:[KWCallSite callSiteWithFilename:exception.filename lineNumber:exception.lineNumber.unsignedIntegerValue] format:@"%@", exception.description]];
-	
+    [[[KWExampleSuiteBuilder sharedExampleSuiteBuilder] currentExample] reportFailure:[KWFailure failureWithCallSite:[KWCallSite callSiteWithFilename:exception.userInfo[@"SenTestFilenameKey"] lineNumber:[exception.userInfo[@"SenTestLineNumberKey"] unsignedIntegerValue]] format:@"%@", exception.description]];
+
     if (stop) { [exception raise]; }
 }
 
