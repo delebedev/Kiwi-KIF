@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     sentest.framework = 'SenTestingKit'
     sentest.source_files = 'src'
     sentest.dependency 'Kiwi/SenTestingKit', '~>2.2.3'
-    s.dependency 'KIF'
+    s.dependency 'KIF/OCUnit'
   end
 
   s.subspec 'XCTest' do |xctest|
