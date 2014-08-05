@@ -10,19 +10,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/garnett/Kiwi-KIF.git", :tag => "#{s.version}" }
   s.requires_arc = true
 
-  s.default_subspec = 'SenTestingKit'
-
-  s.subspec 'SenTestingKit' do |sentest|
-    sentest.framework = 'SenTestingKit'
-    sentest.source_files = 'src'
-    sentest.dependency 'Kiwi/SenTestingKit', '~>2.2.3'
-    s.dependency 'KIF/OCUnit'
-  end
-
-  s.subspec 'XCTest' do |xctest|
-    xctest.framework = 'XCTest', 'SenTestingKit'
-    xctest.source_files = 'src'
-    xctest.dependency 'Kiwi/XCTest', '~>2.2.3'
-    s.dependency 'KIF', '~>3.0.0'
-  end
+  s.framework = 'XCTest'
+  s.source_files = 'src'
+  s.dependency 'Kiwi', '~>2.3.0'
+  s.dependency 'KIF', '~>3.0.7'
 end
