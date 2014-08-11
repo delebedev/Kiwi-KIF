@@ -1,6 +1,10 @@
 Kiwi-KIF
 ========
 
+The repo is no longer updated (due lack of time) in favor of freshly created [similar project ](https://github.com/IndieGoGo/KIF-Kiwi) (by IndieGoGo)
+---
+
+
 This little helper allows to write KIF integration tests using Kiwi framework.
 Fully inspired by this [KIF issue](https://github.com/kif-framework/KIF/issues/246). 
 Thanks to [@bnickel](https://github.com/bnickel) for this pretty solution.
